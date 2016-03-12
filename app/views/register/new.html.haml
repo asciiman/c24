@@ -1,0 +1,36 @@
+%h2 C24 Calculator
+.operand-entry
+  = form_tag controller: :register do
+    .display
+      = text_field_tag(:operand)
+      = button_tag("Enter", class: "enter", type: "button")
+      = button_tag("c", class: "clear", type: "button")
+  .keypad
+    .row
+      = button_tag("9", class: "digit")
+      = button_tag("8", class: "digit")
+      = button_tag("7", class: "digit")
+    .row
+      = button_tag("6", class: "digit")
+      = button_tag("5", class: "digit")
+      = button_tag("4", class: "digit")
+    .row
+      = button_tag("3", class: "digit")
+      = button_tag("2", class: "digit")
+      = button_tag("1", class: "digit")
+    .row
+      = button_tag(".", class: "digit")
+      = button_tag("0", class: "digit")
+      = button_tag("-", class: "neg")
+.operations
+  .row
+    = button_tag("Sum", class: "sum")
+    = button_tag("Mean", class: "mean")
+    = button_tag("New", class: "new")
+.output
+  Operands:
+  .operands
+  Operator:
+  .operator
+  Result:
+  .result

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  operands: 
+  result: 1.5
+  operator: MyString
+
+two:
+  operands: 
+  result: 1.5
+  operator: MyString
